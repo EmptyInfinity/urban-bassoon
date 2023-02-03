@@ -3,6 +3,10 @@ import express from 'express';
 export const buildAPP =  () => {
   const app = express();
 
+  app.get('/', (req, res) => {
+    res.send('base')
+  })
+
   app.get('/books', (req, res) => {
     res.send('books')
   })
