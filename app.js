@@ -15,7 +15,7 @@ export const buildAPP =  () => {
     res.send('users')
   })
 
-  const port = process.env.PORT ?? 8000;
+  const port = process.env.PORT ?? 8080;
   app.listen(port, () => console.log(`Server up and running on port ${port}!`));
   return app;
 }
